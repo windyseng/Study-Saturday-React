@@ -12,7 +12,7 @@ export default class Main extends Component {
   }
 
   componentDidMount(){
-    this.getStudents()
+    this.getStudents() //invokes function and runs this.state and re-renders the entire DOM
   }
 
   async getStudents(){
@@ -27,7 +27,6 @@ export default class Main extends Component {
 
 
   render(){
-    console.log('students-->', this.state.students)
     return(
       <div>
         <h2>Students</h2>

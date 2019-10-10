@@ -42872,7 +42872,7 @@ var Main = function (_Component) {
   _createClass(Main, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.getStudents();
+      this.getStudents(); //invokes function and runs this.state and re-renders the entire DOM
     }
   }, {
     key: 'getStudents',
@@ -42918,7 +42918,6 @@ var Main = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      console.log('students-->', this.state.students);
       return _react2.default.createElement(
         'div',
         null,
